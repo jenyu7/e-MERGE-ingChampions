@@ -32,32 +32,29 @@ public class MergeSortTester
     {
 
 	int[] arr1 = new int[1];
-	int[] arr2 = new int[10];
-	int[] arr3 = new int[100];
-	int[] arr4 = new int[1000];
-	int[][] testArray = {arr1,arr2,arr3,arr4};
-	for (int count = 0; count < 4; count++) {
+	int[] arr2 = new int[1];
+	int[] arr3 = new int[10];
+	int[] arr4 = new int[100];
+	int[] arr5 = new int[1000];
+	int[][] testArray = {arr1,arr2,arr3,arr4,arr5};
+	for (int count = 0; count < testArray.length; count++) {
 	    for (int index = 0; index < testArray[count].length; index++) {
 		testArray[count][index] = (int) (Math.random()*10000);
 	    }
 	}
 
-	long t0, timeElapsed;
+	long t0, t1, timeElapsed;
 	String str = "";
 
-	for (int count = 0; count < 4; count++) {
+	for (int count = 0; count < testArray.length; count++) {
 	    t0 = System.nanoTime();
 	    testArray[count] = MergeSort.sort(testArray[count]);
-	    timeElapsed = System.nanoTime() - t0;
+	    t1 = System.nanoTime();
+	    timeElapsed = t1 - t0;
 	    str += "Length ("+testArray[count].length+"): "+timeElapsed + "\n";
+	    //MergeSort.printArray(testArray[count]);
 	}
 	System.out.println(str);
-
-	System.out.print("Test: ");
-	System.out.println(-1*(System.nanoTime()-System.nanoTime()));
-
-	System.out.println(MergeSort.ptestArray[0]);
-	System.out.println(testArray[1]);	
 
 
 
