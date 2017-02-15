@@ -11,9 +11,9 @@ Jennifer Yu, Eric Zhang, Brandon Zhang: Period 5 APCS2 Brown-Mykolyk <br>
   5. Print the string at the end, and graph the times measured. 
   
 **What we did:**
-  * Ran through the four arrays thirty times. 
+  * Ran through the six arrays thirty times. 
   * Took the average of the runtimes. 
-  * Reduced the averages by a factor of 100 to avoid skewing. 
+  * Reduced the averages by a factor of 100 for a better visualization. 
   * Graphed these averages to see the trend. 
 
 **Graph (Link)** <br> 
