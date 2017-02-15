@@ -17,7 +17,6 @@ Jennifer Yu, Eric Zhang, Brandon Zhang: Period 5 APCS2 Brown-Mykolyk <br>
   * Graphed these averages to see the trend. 
 
 **Graph (Link)** <br> 
- [MergeSort vs. n, nlog(n) and n^2](https://docs.google.com/document/d/1VB3V4dNLcd05KYYzLG7QXkBsOT2EIJXENATCzGV4F_Q/pub)
- Includes a table with values as well as a comprehensive graph. 
-
+ [MergeSort vs. n, nlog(n) and n^2](https://docs.google.com/document/d/1VB3V4dNLcd05KYYzLG7QXkBsOT2EIJXENATCzGV4F_Q/pub)<br> 
+ Includes a table with values as well as a comprehensive graph that evaluates the runtime of MergeSort. 
 
