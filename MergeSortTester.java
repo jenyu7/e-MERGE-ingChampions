@@ -45,18 +45,26 @@ public class MergeSortTester
 
 	long t0, t1, timeElapsed;
 	String str = "";
-
-	for (int count = 0; count < testArray.length; count++) {
-	    t0 = System.nanoTime();
-	    testArray[count] = MergeSort.sort(testArray[count]);
-	    t1 = System.nanoTime();
-	    timeElapsed = t1 - t0;
-	    str += "Length ("+testArray[count].length+"): "+timeElapsed + "\n";
-	    //MergeSort.printArray(testArray[count]);
+	
+	long[] totalResults = new long[4];
+	for (int repeat = 0; repeat < 30; repeat++) {
+	    for (int count = 0; count < testArray.length; count++) {
+		t0 = System.nanoTime();
+		testArray[count] = MergeSort.sort(testArray[count]);
+		t1 = System.nanoTime();
+		timeElapsed = t1 - t0;
+		//str += "Length ("+testArray[count].length+"): "+timeElapsed + "\n";
+		if (count > 0)
+		    totalResults[count-1] += timeElapsed;
+	    
+	    }
+	    System.out.println(str);
+	
 	}
-	System.out.println(str);
-
-
+	for (int count = 0; count < 4; count++) {
+	    totalResults[count] /= 30;
+	    System.out.println("Length: "+testArray[count+1].length+"\nTime: "+totalResults[count]);
+	}
 
     }//end main
 
