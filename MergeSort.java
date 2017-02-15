@@ -19,10 +19,7 @@ HW #06: Step 1: Split, Step 2: ?, Step 3: Sorted!
 		5. Return c. 
 	Runtime: O(n)
 	
-	int[] sort (int[] deck): 
-		1. if the length of deck is 1 (it is a 1 element array), it is already sorted, so return the deck. 
-		2. if else, split the deck in half and make another call to sort for each half, then merge these two sorted halves. 
-	Runtime: O(nlog(n))
+	
   ======================================*/
 
 public class MergeSort {
@@ -73,14 +70,29 @@ public class MergeSort {
      * Returns sorted version of input array (ascending)
      ******************************************************/
     public static int[] sort( int[] deck )
-    {
+    {	
+		/*
 		if (deck.length <= 1){return deck;}
 		else{
 			int[] branch1 = sort(java.util.Arrays.copyOfRange(deck, 0,(deck.length)/2));
 			int[] branch2 = sort(java.util.Arrays.copyOfRange(deck,((deck.length)/2), deck.length));
 			return merge(branch1, branch2);}
+		*/
+		
+		return sortHelp(deck, 0, (deck.length)/2, deck.length);
+		
     }//end sort()
 
+	public static int[] sortHelp(int[] deck, int start, int mid, int end){
+		if (mid-start <= 0){
+			int[] a = {deck[mid]};
+			return a;}
+		else{
+			int[] branch1 = sortHelp(deck, start, (start + mid)/2, mid);
+			int[] branch2 = sortHelp(deck, mid , (mid + end)/2, end);
+			return merge(branch1, branch2);
+		}
+	}
 
 
     //-------------------HELPERS-------------------------
