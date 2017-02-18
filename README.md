@@ -6,7 +6,7 @@ Jennifer Yu, Eric Zhang, Brandon Zhang: Period 5 APCS2 Brown-Mykolyk <br>
 **Method:**
   1. Create 6 arrays of size 1, 10, 100, 1000, 10000, 100000. 
   2. Create a 2D Array holding these 6 arrays. 
-  3. Run through these four arrays via the 2D array, and populate them with random numbers. 
+  3. Run through these six arrays via the 2D array, and populate them with random numbers. 
   4. Sort each one of these arrays using MergeSort, and store the runtimes of the sorting into a string. 
   5. Print the string at the end, and graph the times measured. 
   
