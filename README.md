@@ -1,17 +1,17 @@
 # e-MERGE-ingChampions
-Jennifer Yu, Eric Zhang, Brandon Zhang: Period 5 APCS2 Brown-Mykolyk <br> 
-**This document has been updated as of 02/26/2017. The update is at the bottom.** <br> 
+Jennifer Yu, Eric Zhang, Brandon Zhang: Period 5 APCS2 Brown-Mykolyk <br> <br> 
+**This document has been updated as of 02/26/2017. The update is at the bottom.** <br> <br> 
 ***HW #07: What Does the Data Say?*** <br> 
 **Plan:** Find the runtime of MergeSort on four arrays of different sizes, and graph the trend by graphs of n, n^2 and nlogn to see which best fits. <br> 
 **Method:**
-  1. Create 6 arrays of size 1, 10, 100, 1000, 10000, 100000. 
-  2. Create a 2D Array holding these 6 arrays. 
-  3. Run through these six arrays via the 2D array, and populate them with random numbers. 
+  1. Create 8 arrays of size 1, 10, 100, 1000, 10000, 100000, 1000000, 10000000. 
+  2. Create a 2D Array holding these 8 arrays. 
+  3. Run through these arrays via the 2D array, and populate them with random numbers. 
   4. Sort each one of these arrays using MergeSort, and store the runtimes of the sorting into a string. 
   5. Print the string at the end, and graph the times measured. 
   
 **What we did:**
-  * Ran through the six arrays thirty times. 
+  * Ran through the arrays thirty times. 
   * Took the average of the runtimes. 
   * Reduced the averages by a factor of 100 for a better visualization. 
   * Graphed these averages to see the trend. 
