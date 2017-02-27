@@ -38,7 +38,10 @@ public class MergeSortTester
 	int[] arr5 = new int[1000];
 	int[] arr6 = new int[10000];
 	int[] arr7 = new int[100000];
-	int[][] testArray = {arr1,arr2,arr3,arr4,arr5,arr6,arr7};
+	int[] arr8 = new int[1000000];
+	int[] arr9 = new int[10000000];
+	//int[] arr10 = new int[100000000];
+	int[][] testArray = {arr1,arr2,arr3,arr4,arr5,arr6,arr7,arr8,arr9};
 	for (int count = 0; count < testArray.length; count++) {
 	    for (int index = 0; index < testArray[count].length; index++) {
 		testArray[count][index] = (int) (Math.random()*10000);
@@ -49,8 +52,7 @@ public class MergeSortTester
 	String str = "";
 	//Compile MergeSort before runtime is measured. 
 	MergeSort.sort(buffer);
-	
-	long[] totalResults = new long[7];
+	long[] totalResults = new long[9];
 	for (int repeat = 0; repeat < 30; repeat++) {
 	    for (int count = 0; count < testArray.length; count++) {
 		t0 = System.nanoTime();
