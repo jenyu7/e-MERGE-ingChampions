@@ -3,6 +3,7 @@ Jennifer Yu, Eric Zhang, Brandon Zhang: Period 5 APCS2 Brown-Mykolyk <br> <br>
 **This document has been updated as of 02/26/2017. The update is at the bottom.** <br> <br> 
 ***HW #07: What Does the Data Say?*** <br> 
 **Plan:** Find the runtime of MergeSort on four arrays of different sizes, and graph the trend by graphs of n, n^2 and nlogn to see which best fits. <br> 
+<br> 
 **Method:**
   1. Create 8 arrays of size 1, 10, 100, 1000, 10000, 100000, 1000000, 10000000. 
   2. Create a 2D Array holding these 8 arrays. 
@@ -23,7 +24,7 @@ Jennifer Yu, Eric Zhang, Brandon Zhang: Period 5 APCS2 Brown-Mykolyk <br> <br>
  **UPDATE:**<br> 
  In order to further investigate the runtime of the merge sort algorithm, we decided to add a few more arrays of larger sizes to the code in `MergeSortTester.java`: <br> <br> 
  `int[] buffer = {0,0};` <br> 
-	`int[] arr1 = new int[1];`
+	`int[] arr1 = new int[1];`<br>
 	`int[] arr2 = new int[1];` <br> 
 	`int[] arr3 = new int[10];` <br> 
 	`int[] arr4 = new int[100];` <br> 
